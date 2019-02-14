@@ -16,10 +16,20 @@ OS/DB/Tools/ETC : Windows / MYSQL / Eclipse / HTML&CSS B ,
 ![ERD](https://user-images.githubusercontent.com/45536211/52761430-ba27c500-3056-11e9-8da2-ac7d1f8fa530.png)
 
 ● 쇼핑몰 설명
+
+
+
 ![메인이미지](https://user-images.githubusercontent.com/45536211/52777052-4a313300-3086-11e9-8ce6-a4d575de3e18.jpg)
-- 메인페이지 화면입니다 카테고리별로 상품을 보거나 전체페이지로 이동이 가능합니다.
 
+//메인페이지 화면입니다 카테고리별로 상품을 보거나 전체페이지로 이동이 가능합니다.
 
+![커뮤니티 메인](https://user-images.githubusercontent.com/45536211/52778302-0b50ac80-3089-11e9-879d-c4f1f0b57ecf.jpg)
+
+//커뮤니티 페이지 메인 화면입니다.
+
+![검색기능](https://user-images.githubusercontent.com/45536211/52778708-f88aa780-3089-11e9-92db-9cccbebc2b14.jpg)
+
+//검색기능을 구현하였습니다. 해당 조건과 검색어를 전달받아 검색한 화면입니다.
 
 -로그인 페이지
 
