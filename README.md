@@ -23,6 +23,11 @@ OS/DB/Tools/ETC : Windows / MYSQL / Eclipse / HTML&CSS B ,
 
 //메인페이지 화면입니다 카테고리별로 상품을 보거나 전체페이지로 이동이 가능합니다.
 
+● 로그인페이지
+![로그인](https://user-images.githubusercontent.com/45536211/52790946-26341880-30ab-11e9-87a3-7cace4f40cc1.jpg)
+//로그인이 성공적으로 이루어졌으면 로그인 정보를 세션에 저장합니다.
+
+
 ● 커뮤니티 메인페이지
 ![커뮤니티 메인](https://user-images.githubusercontent.com/45536211/52778302-0b50ac80-3089-11e9-879d-c4f1f0b57ecf.jpg)
 
@@ -92,9 +97,6 @@ OS/DB/Tools/ETC : Windows / MYSQL / Eclipse / HTML&CSS B ,
 //댓글역시 이와같은 형태로 수정/삭제가 가능합니다.
 
 
-
-
-● 메인페이지
 
 
 MySql을 사용하여 DB에 저장된 id와 비밀번호를 매칭해 맞으면 세션값에 저장하여 로그인을 했다는걸 보여줄수 있게하였습니다.회원가입시에는 id중복체크와 이메일 인증, 휴대폰 인증과 주소를 입력하지 않으면 회원가입이 불가능하게해놨으며 정규식을 사용해 각 입력값에 유효검사하였습니다.
