@@ -18,20 +18,79 @@ OS/DB/Tools/ETC : Windows / MYSQL / Eclipse / HTML&CSS B ,
 ● 쇼핑몰 설명
 
 
-
+● 메인페이지
 ![메인이미지](https://user-images.githubusercontent.com/45536211/52777052-4a313300-3086-11e9-8ce6-a4d575de3e18.jpg)
 
 //메인페이지 화면입니다 카테고리별로 상품을 보거나 전체페이지로 이동이 가능합니다.
 
+● 커뮤니티 메인페이지
 ![커뮤니티 메인](https://user-images.githubusercontent.com/45536211/52778302-0b50ac80-3089-11e9-879d-c4f1f0b57ecf.jpg)
 
 //커뮤니티 페이지 메인 화면입니다.
 
+● 검색기능
 ![검색기능](https://user-images.githubusercontent.com/45536211/52778708-f88aa780-3089-11e9-92db-9cccbebc2b14.jpg)
 
 //검색기능을 구현하였습니다. 해당 조건과 검색어를 전달받아 검색한 화면입니다.
 
--로그인 페이지
+● 페이징처리
+![페이징처리](https://user-images.githubusercontent.com/45536211/52779016-a7c77e80-308a-11e9-991d-0d9d632994e8.jpg)
+
+// 페이지를 클릭할때마다 get방식으로 현재페이지 번호와 페이지 블럭(한페이지당 보여줄페이지)를 전달하여 페이징 처리하였습니다.
+
+● 글쓰기 페이지
+- 글쓰기 페이지
+![글쓰기페이지](https://user-images.githubusercontent.com/45536211/52780743-41dcf600-308e-11e9-94d5-2581f357b40b.jpg)
+
+// 유효성검사를 실시하고 통과하면
+![글작성완료](https://user-images.githubusercontent.com/45536211/52781100-13134f80-308f-11e9-8119-3a8f64eeb4e8.jpg)
+//사진과 같이 글이 등록됨을 확인 할 수 있습니다.
+
+● 글보기 페이지입니다.
+![글보기페이지](https://user-images.githubusercontent.com/45536211/52781607-54582f00-3090-11e9-802e-538ed8efebba.jpg)
+
+// 추천하기 버튼을 누르면
+
+![추천확인](https://user-images.githubusercontent.com/45536211/52781844-ebbd8200-3090-11e9-8f1f-b8975741478b.jpg)
+
+// 추천이 되었음을 확인 할 수 있습니다.
+
+● 파일 다운로드
+![파일 다운로드](https://user-images.githubusercontent.com/45536211/52783414-2a553b80-3095-11e9-99ea-2f867bca6779.jpg)
+
+//시간을 보시면 파일이 성공적으로 다운로드 됬음을 확인할수 있습니다.
+
+● 댓글남기기
+![댓글관련](https://user-images.githubusercontent.com/45536211/52783606-c121f800-3095-11e9-9314-01b2bc23841a.jpg)
+
+// 위사진과 같이 댓글을 남기면 댓글목록에 댓글이 출력됩니다.
+// 댓글역시 본인인지 확인하여 수정/삭제가 가능합니다.
+
+● 게시글수정
+![게시글수정](https://user-images.githubusercontent.com/45536211/52783812-663cd080-3096-11e9-8423-88f250a23592.jpg)
+
+// 게시글 수정폼입니다. 이곳역시 정규식이 모두 걸려있습니다.
+
+![게시글수정완료](https://user-images.githubusercontent.com/45536211/52783890-b451d400-3096-11e9-93bd-be723ee58549.jpg)
+
+//게시글이 수정되었다는 알람과 확인을 누르면 게시글이 수정됨을 확인할수 있습니다.
+
+● 답글달기
+![답글달기](https://user-images.githubusercontent.com/45536211/52784010-127eb700-3097-11e9-9882-e98d28df6e1c.jpg)
+
+//답변달기 폼입니다. 이후 확인을 누르면 
+
+![답글달기완료](https://user-images.githubusercontent.com/45536211/52784127-6ab5b900-3097-11e9-8df8-d043de73d517.jpg)
+
+//들여쓰기를 통해 답글이 달렸음을 확인 할 수 있습니다.
+
+● 글삭제
+![글삭제](https://user-images.githubusercontent.com/45536211/52784232-c2542480-3097-11e9-9087-0cbb952dbc5a.jpg)
+
+//글이 삭제됨을 알 수 있습니다.
+
+//댓글역시 이와같은 형태로 수정/삭제가 가능합니다.
+
 
 
 

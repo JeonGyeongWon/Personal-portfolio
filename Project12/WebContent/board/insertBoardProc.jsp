@@ -39,7 +39,7 @@
    	*/
    	<%
    		ServletContext context =request.getServletContext(); //현재 프로젝트의 컨텍스트를 가져옴 server.xml확인
-		String realPath = context.getRealPath("board/File"); //이클립스에있는 가상경로로 실제파일이 업로드되는 경로를 알수있음
+		String realPath = context.getRealPath("./board/File"); //이클립스에있는 가상경로로 실제파일이 업로드되는 경로를 알수있음
 		//가상경로 /File
 		//현재 내 실제저장되는 경로인데. 톰캣경로가아닌 workspace.meta폴더안으로 되어있다. 
 		System.out.println(realPath);

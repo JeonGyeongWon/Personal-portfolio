@@ -5,6 +5,13 @@
 	//다운로드할 파일 한글깨짐 방지
 	System.out.print(request.getParameter("path"));
     String path = new String((request.getParameter("path")).getBytes("8859_1"), "UTF-8");
+    
+   
+    //나는 파일경로와 파일명을 구분하지 않았으므로 다운로드시 실제 파일의 이름만 들어가게 하는 작업
+   	ServletContext context =request.getServletContext();
+    int realPath = context.getRealPath("./board/File").length()+1;
+    
+    String downloadName;
 	
     System.out.print(path);
 	//나는 한번에 다가져옴 절대경로+파일명
@@ -30,6 +37,7 @@
         try {
             file = new File(fname);	//맨위 path경로에있는 파일을 파일객체에 저장
             viewFile = new File(fname1);	//보여줄파일?
+            
             in = new FileInputStream(file);	//file객체에 파일을 읽어들림
         } catch (FileNotFoundException fe) {
             skip = true;
@@ -48,17 +56,16 @@
        	//MIME을 모든 바이너리파일을 읽을수 있는 application로 바꿔줌 -> dll이나,xml등 웹브라우저가 자체적으로 읽는걸 방지 
         response.setContentType("application/x-msdownload;");
         response.setHeader("Content-Description", "JSP Generated Data");
-
         if (!skip) {
         	//익플 버전에따른 헤더부분변경 및 헤더설정
             if (client.indexOf("MSIE 5.5") != -1) {
                 response.setHeader("Content-Type", "doesn/matter; charset=euc-kr");
                 response.setHeader("Content-Disposition",
-                        "filename=" + new String(fname.getBytes("utf-8"), "8859_1"));
+                        "filename=" + new String(fname.substring(realPath).getBytes("utf-8"), "8859_1"));
             } else {
                 response.setHeader("Content-Type", "application/octet-stream; charset=euc-kr");
                 response.setHeader("Content-Disposition",
-                        "attachment; filename=" + new String(fname.getBytes("utf-8"), "8859_1"));
+                        "attachment; filename=" + new String(fname.substring(realPath).getBytes("utf-8"), "8859_1"));
             } //else
             response.setHeader("Content-Transfer-Encoding", "binary;");
             response.setHeader("Content-Length", "" + file.length());
@@ -70,7 +77,7 @@
             out = pageContext.pushBody();
             //버퍼에 내용을 지우고 out내장객체를 body태그 밖으로 밀어냄 
             // -> 컴파일시 서블릿은 자동으로 내장객체를 얻는데 다른 output스트림을 얻을경우 out객체가 중복되어 오류가생기기때문
-            
+           
             os = response.getOutputStream();
             byte b[] = new byte[4096];
             int leng = 0;
