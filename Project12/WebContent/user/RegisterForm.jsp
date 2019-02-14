@@ -116,6 +116,8 @@ function RegisterCk(){
 	// 영어 (대문자+소문자) + 숫자 + 특수문자 가 섞인 8~15자리의 수
 	var password_pattern = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
 	
+	
+	
 	//한글처리만하는 정규식
 	var ckName = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
 	if(!($("#id").attr("readonly")=="readonly")){

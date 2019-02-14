@@ -23,6 +23,39 @@ OS/DB/Tools/ETC : Windows / MYSQL / Eclipse / HTML&CSS B ,
 
 //메인페이지 화면입니다 카테고리별로 상품을 보거나 전체페이지로 이동이 가능합니다.
 
+
+● 회원가입 페이지입니다.
+![회원가입](https://user-images.githubusercontent.com/45536211/52792841-aeb4b800-30af-11e9-8bd9-98978d7da005.jpg)
+
+	//각 요효성 은 이렇습니다.
+	ID : 영문대,소문자 , 숫자 4 ~12 자리 (정규식 사용)
+	비밀번호 :(대문자+소문자) + 숫자 + 특수문자 가 섞인 8~15자리의 수 (정규식 사용)
+	이름 : 한글처리만 가능 (정규식 사용)
+	이메일 : input type을 email로 지정
+	휴대폰 : 숫자3자리 - 숫자4자리 - 숫자3자리 (정규식사용) 
+	주민번호 : input태그 속성에 maxlength제한 설정
+	주소 : 비어있는 값이 있으면 안됨
+	
+
+● 이메일인증
+![이메일인증](https://user-images.githubusercontent.com/45536211/52792834-a8bed700-30af-11e9-9bf8-a8f97ef3218d.jpg)
+
+//구글 Gmail을 사용했습니다.
+
+
+● 휴대폰인증
+![휴대폰인증](https://user-images.githubusercontent.com/45536211/52792845-b07e7b80-30af-11e9-8474-39b83f6b08f8.jpg)
+
+//cafe24의 sms보내기 api를 사용하여 Random으로 6자리를 만들어 해당 휴대폰번호로 전송했습니다.
+//이후 랜덤숫자와 입력한 숫자가 맞으면 인증이 가능하게 만들었습니다.
+
+
+● 주소인증
+![주소인증](https://user-images.githubusercontent.com/45536211/52792839-abb9c780-30af-11e9-9035-203691f83731.jpg)
+
+//다음 주소찾기 api를 사용하여 만들었습니다.
+
+
 ● 로그인페이지
 ![로그인](https://user-images.githubusercontent.com/45536211/52790946-26341880-30ab-11e9-87a3-7cace4f40cc1.jpg)
 //로그인이 성공적으로 이루어졌으면 로그인 정보를 세션에 저장합니다.
