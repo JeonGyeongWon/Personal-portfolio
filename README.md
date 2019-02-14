@@ -45,7 +45,7 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 　
 	● 회원가입 페이지입니다.
 	
-![회원가입](https://user-images.githubusercontent.com/45536211/52792841-aeb4b800-30af-11e9-8bd9-98978d7da005.jpg)
+![회원가입](https://user-images.githubusercontent.com/45536211/52799325-ef66fe00-30bc-11e9-8d03-7284aaadeed6.jpg)
 
 	//각 요효성 은 이렇습니다.
 	ID : 영문대,소문자 , 숫자 4 ~12 자리 (정규식 사용)
