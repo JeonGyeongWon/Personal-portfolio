@@ -15,10 +15,11 @@ OS/DB/Tools/ETC : Windows / MYSQL / Eclipse / HTML&CSS B ,
 ● DB ERD 
 ![ERD](https://user-images.githubusercontent.com/45536211/52761430-ba27c500-3056-11e9-8da2-ac7d1f8fa530.png)
 
-![메인이미지](https://user-images.githubusercontent.com/45536211/52774010-aa70a680-307f-11e9-8e6e-ce66aee017cd.png)
+● 쇼핑몰 설명
+![메인이미지](https://user-images.githubusercontent.com/45536211/52777052-4a313300-3086-11e9-8ce6-a4d575de3e18.jpg)
+- 메인페이지 화면입니다 카테고리별로 상품을 보거나 전체페이지로 이동이 가능합니다.
 
 
-● 핵심기술 구현
 
 -로그인 페이지
 
