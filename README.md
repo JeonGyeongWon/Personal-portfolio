@@ -12,12 +12,20 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 OS/DB/Tools/ETC : Windows / MYSQL / Eclipse / HTML&CSS B , 
 다음 주소검색 API, 네이버스마트에디터, 구글 이메일보내기, cafe24의 SMS보내기 api
 
-● 핵심기술 구현
-로그인, 회원가입,메일보내기 및 휴대폰 인증 및 주소입력
+● DB ERD 
+![ERD](https://user-images.githubusercontent.com/45536211/52761430-ba27c500-3056-11e9-8da2-ac7d1f8fa530.png)
 
-- 로그인 :
-![erd](https://user-images.githubusercontent.com/45536211/52761430-ba27c500-3056-11e9-8da2-ac7d1f8fa530.png)
-로그인 화면입니다
+![메인이미지](https://user-images.githubusercontent.com/45536211/52774010-aa70a680-307f-11e9-8e6e-ce66aee017cd.png)
+
+
+● 핵심기술 구현
+
+-로그인 페이지
+
+
+
+● 메인페이지
+
 
 MySql을 사용하여 DB에 저장된 id와 비밀번호를 매칭해 맞으면 세션값에 저장하여 로그인을 했다는걸 보여줄수 있게하였습니다.회원가입시에는 id중복체크와 이메일 인증, 휴대폰 인증과 주소를 입력하지 않으면 회원가입이 불가능하게해놨으며 정규식을 사용해 각 입력값에 유효검사하였습니다.
 
