@@ -1,8 +1,4 @@
-<style type="text/css"> 
-    body { 
-    background-color: #336655; 
-    } 
-</style> 
+.readme {background-color:#fff;font-family:sans-serif; margin-top: 0;}
 
 # Personal-portfolio
 개인포트폴리오 저장공간
