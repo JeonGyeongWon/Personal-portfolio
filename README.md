@@ -7,7 +7,7 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 	 회원가입, 로그인, 회원정보수정, 게시판(CRUD), 자료실(파일업로드, 다운로드), 이미지갤러리게시판, 답변달기, 추천하기, 
 	 댓글달기, 우편번호 검색(다음api), 페이징, 장바구니, 관련상품 보여주기, 검색기능, 메일보내기, 문자보내기(Caff24)
 
-	<div style="background-color:rgba(0, 0, 0, 0.0470588); 
+	<div style="background-color:rgba(0, 0, 0, 0.0470588)">
 
  
 	
