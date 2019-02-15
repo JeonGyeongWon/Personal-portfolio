@@ -148,7 +148,7 @@ public class BoardDao {
 		ArrayList<BoardDto> list = new ArrayList<BoardDto>();
 		
 		
-		String sql = "select u.id,subject,content,regdate,count from board b join users u on b.id = u.id where u.id = ?";
+		String sql = "select u.id,b.no,subject,content,regdate,count from board b join users u on b.id = u.id where u.id = ?";
 		
 		try{
 			con=pool.getConnection();
@@ -157,6 +157,7 @@ public class BoardDao {
 			rs=pstmt.executeQuery();
 			while(rs.next()){
 				BoardDto dto = new BoardDto();
+				dto.setNo(rs.getInt("no"));
 				dto.setId(rs.getString("id"));
 				dto.setSubject(rs.getString("subject"));
 				dto.setContent(rs.getString("content"));

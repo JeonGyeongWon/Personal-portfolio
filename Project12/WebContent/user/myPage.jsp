@@ -155,7 +155,7 @@ text-align: center;
 			%>
 				
 				<tr>
-					<td><a href="../board/seeBoard.jsp?no=<%=dto.getNo()%>"><%=dto.getNo()%></a></td>
+					<td><a href="../board/seeBoard.jsp?no=<%=b_dto.getNo()%>"><%=b_dto.getNo()%></a></td>
 					<td><%=b_dto.getSubject()%></td>
 					<td><%=b_dto.getId() %></td>
 					<td><%=b_dto.getRegdate() %></td>
