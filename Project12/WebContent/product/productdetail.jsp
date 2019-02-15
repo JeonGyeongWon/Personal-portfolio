@@ -66,7 +66,7 @@ function gobasketProc(no){
 					
 					<%-- 관련상품들 뿌려주기 --%>
 					<%
-						ArrayList<ProductDto> p_list = dao.allSelectedCategoryProduct(dto.getPa_category(), dto.getCh_category());
+						ArrayList<ProductDto> p_list = dao.allSelectedCategoryProduct(dto.getPa_category(), dto.getCh_category(), dto.getNo());
 					%>
 					<div class="recommended_items"><!--recommended_items-->
 						<h2 class="title text-center">관련상품들</h2>
@@ -82,9 +82,9 @@ function gobasketProc(no){
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="imgs/<%=p_dto.getImage() %>" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
-													<button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+													<h2>가격 : <%=p_dto.getPrice() %></h2>
+													<p>상품이름 :<%=p_dto.getName() %></p>
+													<button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>장바구니담기</button>
 												</div>
 											</div>
 										</div>

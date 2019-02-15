@@ -17,10 +17,7 @@ public class ProductDao {
 	
 	// 상품목록 
 	
-	
-	// 카테고리의 대한정보를 들고옴 (작은 카테고리까지)
-	
-	public ArrayList<ProductDto> allSelectedCategoryProduct(String pa_category, int ch_category){
+	public ArrayList<ProductDto> allSelectedCategoryProduct(String pa_category, int ch_category ){
 		ArrayList<ProductDto> list = new ArrayList<ProductDto>();
 		String sql = "select * from product where pa_category = ? and ch_category = ?";
 		
@@ -29,6 +26,45 @@ public class ProductDao {
 			pstmt=con.prepareStatement(sql);
 			pstmt.setString(1, pa_category);
 			pstmt.setInt(2, ch_category);
+			rs=pstmt.executeQuery();
+			while(rs.next()){
+				ProductDto dto = new ProductDto();
+				dto.setBestCount(rs.getInt("bestCount"));
+				dto.setCh_category(rs.getInt("ch_category"));
+				dto.setImage(rs.getString("image"));	//이미지 경로
+				dto.setName(rs.getString("name"));
+				dto.setNo(rs.getInt("no"));
+				dto.setPa_category(rs.getString("pa_category"));
+				dto.setPrice(rs.getInt("price"));
+				dto.setStock(rs.getInt("stock"));
+				dto.setId(rs.getString("id"));
+				dto.setContent(rs.getString("content"));
+				dto.setSale(rs.getBoolean("sale"));
+				
+				list.add(dto);
+			}
+		}catch(Exception e){
+			System.out.println("allBringProduct에서"+e);
+		}finally{
+			pool.close(con, pstmt, rs);
+		}
+		
+		return list;
+		
+	}
+	
+	
+	// 연관 정보를 들고옴
+	public ArrayList<ProductDto> allSelectedCategoryProduct(String pa_category, int ch_category, int no){
+		ArrayList<ProductDto> list = new ArrayList<ProductDto>();
+		String sql = "select * from product where pa_category = ? and ch_category = ? and no not in(?)";
+		
+		try{
+			con=pool.getConnection();
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, pa_category);
+			pstmt.setInt(2, ch_category);
+			pstmt.setInt(3, no);
 			rs=pstmt.executeQuery();
 			while(rs.next()){
 				ProductDto dto = new ProductDto();

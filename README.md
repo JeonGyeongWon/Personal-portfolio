@@ -1,6 +1,4 @@
-.link .usertext-body .md {
-    background-color: #303030;
-}
+
 
 # Personal-portfolio
 개인포트폴리오 저장공간
@@ -181,13 +179,41 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 	//글이 삭제됨을 알 수 있습니다.
 	//댓글역시 이와같은 형태로 수정/삭제가 가능합니다.
 
+　
+	● 상위카테고리 눌렀을때
+![shop](https://user-images.githubusercontent.com/45536211/52852456-fe50bd80-315b-11e9-8c15-90feb45d861b.jpg)
 
+	// 하위 카테고리를 누르지않곳 상위카테고리만 눌렀을때 해당
+	// 카테고리의 모든 상품들을 보여줍니다.
+	
 
+	● 하위카테고리 눌렀을때	　
+![하위카테고리](https://user-images.githubusercontent.com/45536211/52852501-204a4000-315c-11e9-950e-5d0bfd826512.jpg)
 
+	//하위카테고리를 누르면 해당 카테고리의 대한 정보들을 보여줍니다.
 
+　
+	● 상품등록폼
+![상품등록폼](https://user-images.githubusercontent.com/45536211/52852462-04df3500-315c-11e9-9550-06f083000fc3.jpg)
+
+	//상위카테고리 선택시 하위카테고리가 자동으로바뀜
+	이미지의 정규식을 걸어 이미지파일 (png, jpg, jpeg)만 	올라가게설정했습니다.!
+
+	
+	
+![상품등록완료](https://user-images.githubusercontent.com/45536211/52852495-1d4f4f80-315c-11e9-9e7f-be8d24576f0f.jpg)
+
+	//상품이 등록됨을 확인할수 있습니다.
+　
+	● 상품보기
+![상품보기](https://user-images.githubusercontent.com/45536211/52852525-30fab600-315c-11e9-80cd-35cf4fe7cb03.jpg)
+
+	//상품을 누르면 해당 상품의 대한 정보가 나오며 수량을 입력후
+	//장바구니에 담으면 장바구니에 해당 상품의 대한 정보가 보입니다.
+	//보고있는 상품과 같은 카테고리의 상품들을 관련상품들에 보여줍니다.
+		
 
 	●개발과정
-
 2018/12/02
 -> 부트스트랩 템플릿을 가져왔고 디자인 부분수정 후 header와 footer로 영역을 나누고 회원가입 구현(DB연결)
 
