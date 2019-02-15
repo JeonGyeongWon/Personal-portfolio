@@ -1,4 +1,6 @@
-.readme {background-color:#fff;font-family:sans-serif; margin-top: 0;}
+.link .usertext-body .md {
+    background-color: #303030;
+}
 
 # Personal-portfolio
 개인포트폴리오 저장공간
