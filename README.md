@@ -226,7 +226,7 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 	//이메일과 휴대폰은 다시 인증을 해야만 바꿀수 있습니다.
 　
 	● 마이페이지[내가쓴글보기]
-![내가쓴글](https://user-images.githubusercontent.com/45536211/52853950-6d301580-3160-11e9-9e23-2cb5b15532f1.jpg)
+![내가쓴글목록](https://user-images.githubusercontent.com/45536211/52854285-50481200-3161-11e9-92bf-d0dea5444b5c.jpg)
 
 	//로그인한 유저가 작성한 글목록을 보여줍니다. 여기도 페이징
 	//처리하였습니다.
