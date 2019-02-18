@@ -60,8 +60,35 @@
 			<%-- 이후 아이디당 1번씩만추천할수 있도록 변경--%>
 				location.href="upBestCount.jsp?no="+<%=no%>;
 			});
+		
 	})
 	
+	function comment(no,id){
+		var c_content = $("#c_content").val();
+		$.ajax({
+			type : "post",
+			url : "commentProc.jsp",
+			data : {
+				"no" : no, "id" : id, "c_content" : c_content
+			},
+			dataType : "json",
+			success : function(comment){
+				alert("댓글을 달았습니다.");
+				$("#commentList").append("<div class='col-md-12'>");
+				$("#commentList").append("<div class='col-md-2'>");
+				$("#commentList").append("작성자 : "+comment.id+"<br><a onclick='fnupdate('"+comment.c_no+")'>수정</a>&nbsp;&nbsp;|&nbsp;&nbsp;");
+				$("#commentList").append("<a href='DeleteComment.jsp?comment_no='"+comment.c_no+">삭제</a></div>");
+				$("#commentList").append("<textarea rows='3' cols='5' class='col-md-8' name='content' readonly='readonly'>");
+				$("#commentList").append(comment.comment+"</textarea>");
+				$("#commentList").append("<span>작성날짜 : <br>"+comment.regdate+"</span>");
+				$("#commentList").append("</div>");
+				$("#commentList").append("<br><br>");
+			},
+			error : function(ee){
+				alert("에러");
+			}
+		});
+	}
 	
 	
 	</script>
@@ -151,6 +178,7 @@
 <%-- 댓글들을 뿌려주는곳 --%>
 
 <legend class="text-center">댓글목록</legend>
+<div class="container" id="commentList">
 <%
 	CommentDao c_dao = new CommentDao();
 	ArrayList<CommentDto> c_list =  c_dao.allSelectComment(no);
@@ -159,7 +187,7 @@
 	
 %>
 
-<div class="container">
+
 	<div class="col-md-12">
 	<div class="col-md-2">작성자 : <%=c_dto.getId() %><br><a onclick="fnUpdate(<%=c_dto.getComment_no()%>);">수정</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 	<a href="DeleteComment.jsp?comment_no=<%=c_dto.getComment_no()%>">삭제</a></div>	
@@ -167,9 +195,10 @@
 	<%=c_dto.getContent() %> </textarea>
 		<span>작성날짜 : <br><%=c_dto.getRegdate()%></span>
 	</div>
-	</div>
+	
 	<br><br>
 	<% }%>
+	</div>
 <%-- 댓글입력 폼 --%>
 <% String id = "";
 	if(session.getAttribute("id")!=null){
@@ -180,13 +209,9 @@
 <div class="container">
 	<div class="col-md-12">
 	<%if(!id.equals("")){ %>
-	<form action="commentProc.jsp">
-	<input type="hidden" name=board_no value="<%=no %>"> <%-- 게시글번호전달 --%>
-	<input type="hidden" name=id value="<%=id %>">
 	<div class="col-md-2">작성자 : <%=session.getAttribute("id") %></div>	
-	<textarea rows="5" cols="20" class="col-md-8" name=content></textarea>
-	<input type="submit" class="col-md-2" value="댓글남기기" height="30px" >
-	</form>
+	<textarea rows="5" cols="20" class="col-md-8" name=content id="c_content"></textarea>
+	<button onclick="comment(<%=no %>,'<%=id%>');">댓글남기기</button>
 	<% }else{
 		%>
 		<input type="hidden" name=no value="<%=no %>"> <%-- 게시글번호전달 --%>

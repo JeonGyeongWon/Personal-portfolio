@@ -81,8 +81,9 @@ public class CommentDao {
 	
 	// 해당글에 대한 댓글을 추가 하는 기능
 	
-	public void InsertComment(CommentDto dto){
+	public int InsertComment(CommentDto dto){
 		String sql = "insert into comment(board_no,id,content,regdate) values(?,?,?,?)";
+		int result = 0;
 		try{
 			con=pool.getConnection();
 			pstmt=con.prepareStatement(sql);
@@ -93,11 +94,22 @@ public class CommentDao {
 			
 			pstmt.executeUpdate();
 			
+			sql = "select comment_no from comment order by comment_no desc limit 0,1";
+			
+			pstmt = con.prepareStatement(sql);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs.next())
+				result = rs.getInt(1);
+			
 		}catch(Exception e){
 			System.out.println("InsertComment에서"+e);
 		}finally{
 			pool.close(con, pstmt, rs);
 		}
+		
+		return result;
 		
 		
 	}

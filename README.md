@@ -102,16 +102,14 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 		클릭하면 장바구니에 담긴 상품들이 구매가 되며 장바구니가 비워지며 해당 상품들은 마이페이지에서 확인이 가능합니다.
 		
 		
-		
-	<details>
-	<summary><h1>클릭하시면 이미지 확인이 가능합니다.</h1></summary>
-	<div markdown="1">	
-	
-　
-	● DB ERD 
+
+	● DB ERD
+
+
 	
 ![ERD](https://user-images.githubusercontent.com/45536211/52761430-ba27c500-3056-11e9-8da2-ac7d1f8fa530.png)
 
+	　
 <br>
 <br>
 
@@ -119,6 +117,10 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 
 <br>
 <br>
+
+<details>
+<summary><h1>클릭하시면 이미지 확인이 가능합니다.</h1></summary>
+<div markdown="1">
 
 	● 메인페이지
 	
