@@ -63,13 +63,15 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 	
 ![ERD](https://user-images.githubusercontent.com/45536211/52761430-ba27c500-3056-11e9-8da2-ac7d1f8fa530.png)
 
-
+<br>
+<br>
 
 <details>
-	<summary><strong>쇼핑몰보기/닫기 버튼</strong></summary>
+	<summary><h1>클릭하시면 쇼핑몰 이미지가 나옵니다.</h1></summary>
 <div markdown="1">
 
-
+<br>
+<br>
 
 	● 메인페이지
 	
