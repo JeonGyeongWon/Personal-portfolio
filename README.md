@@ -65,10 +65,9 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 
 
 
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 쇼핑몰 설명 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-
-
-
+<details>
+<summary>쇼핑몰 /닫기</summary>
+<div markdown="1">
 
 	● 메인페이지
 	
@@ -262,7 +261,8 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 
 	//장바구니에서 결제한 목록들을 볼수있습니다.
 	
----------------------쇼핑몰설명 종료 -----------------
+</div>
+</details>
 	
 
 	●개발과정
