@@ -66,8 +66,10 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 
 
 <details>
-<summary>#쇼핑몰보기/닫기 버튼</summary>
+	<summary><strong>쇼핑몰보기/닫기 버튼</strong></summary>
 <div markdown="1">
+
+
 
 	● 메인페이지
 	
