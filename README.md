@@ -67,7 +67,7 @@ https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
 <br>
 
 <details>
-	<summary><h1>클릭</h1>&gt;&gt;&gt;하시면 쇼핑몰 이미지가 나옵니다.</summary>
+	<summary><h1>클릭&gt;&gt;&gt;하시면 쇼핑몰 이미지가 나옵니다.</h1></summary>
 <div markdown="1">
 
 <br>
