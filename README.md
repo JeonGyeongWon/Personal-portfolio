@@ -3,7 +3,7 @@
 # Personal-portfolio
 개인포트폴리오 저장공간
 
-https://github.com/JeonGyeongWon/TeamProject << 팀프로젝트보러가기
+스프링 공부한것 보러가기 https://github.com/JeonGyeongWon/StudySpring 
 
 
         ● 프로젝트명 : 
